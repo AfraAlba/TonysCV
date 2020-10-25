@@ -1,4 +1,4 @@
-	* {
+* {
 	box-sizing: border-box;
 	font-family: 'Century Gothic', sans-serif;
 	font-size: 20px;
@@ -27,8 +27,7 @@ h2 {
 }
 
 hr {
-	background-color: #ffd924;
-	border: solid 1px #ffd924;
+	border: #ffd924 solid 1px;
 }
 
 .hrsmall {
@@ -67,13 +66,12 @@ hr {
 }
 
 .iconYellow {
-	color: #ffd924;
-	//padding-right: 50px;   
+	color: #ffd924;   
 }
 
 .circleIcon {
 	color: #595959;
-	border: 1px solid #595959;
+	border: #595959 3px solid;
 	border-radius: 50%;
 	padding: 2px
 }
@@ -90,14 +88,14 @@ hr {
 .circleBorder {
 	border-radius: 50%;
 	padding: 15px;
-	border: 2px solid rgb(64, 64, 64);
+	border: rgb(64, 64, 64) 2px solid;
 	height: 80px;
 	font-size: 64px;
 	color: rgb(64, 64, 64);
 }
 
 .surname {
-	color: Black;
+	color: black;
 	font-family: 'Century Gothic', sans-serif;
 	font-size: 60px;
 	text-transform: uppercase;
@@ -105,7 +103,6 @@ hr {
 
 body {
 	margin: 0;
-	/*display: block;*/
 	font-family: Arial, sans-serif;
 	background-color: white;
 }
@@ -135,9 +132,6 @@ body {
 }
 
 .row {
-	//border: 2px solid black;
-	/*background: rgb(64,64,64);
-  text-align: center;*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -174,7 +168,6 @@ body {
 	font-weight: 600;
 	color: #ffd924;
 	text-transform: uppercase;
-	*/
 }
 
 .sidebarTitleDiv {
@@ -182,7 +175,7 @@ body {
 	text-align: center;
 }
 
-#sidebar {
+#sidebarLeft {
 	background-color: #ffd924
 }
 
@@ -214,11 +207,10 @@ img {
 }
 
 img {
-	border: 3px solid #ffcd24;
+	border: #ffcd24 3px solid;
 	width: 190px;
 	height: 190px;
 }
-
 
 /* For mobile phones: */
 
@@ -263,4 +255,4 @@ img {
 	}
 	.col-12 {
 		width: 100%;
-	}
+}}
