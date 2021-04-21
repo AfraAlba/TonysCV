@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+}
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin: auto;
+}
+
+header img {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  height: 50px;
+  width: 220px;
+}
+header div {
+  font-size: 2em;
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+a:link {
+  text-decoration: none;
+}
+.fas.fa-arrow-left {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  font-size: 25px;
+  float: left;
+}
+.fas fa-map-marker-alt map-icon-format {
+  align-items: center;
+}
+.XL_picture img {
+  object-fit: cover;
+  height: 17rem;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  position: relative;
+  object-position: center;
+  z-index: -1;
+}
+.far fa-heart {
+  float: right;
+  padding-right: 2em;
+}
+.background-color {
+  background-color: #f2f2f2;
+  margin-top: -4em;
+  border-radius: 25px;
+}
+.restaurant-heading {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+.restaurants-text {
+  font-size: 1.3em;
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+  padding-left: 25px;
+}
+.menu {
+  background-color: #eee;
+  border-radius: 150px;
+  margin-top: -5em;
+}
+.menu h3 {
+  font-size: 2em;
+  font-weight: normal;
+  font-family: 'Shrikhand', cursive;
+  display: block;
+  padding-top: 30px;
+  margin: 40px 25px 0px 25px;
+  color: black;
+  text-align: left;
+}
+.icon-heart {
+  color: transparent;
+  -webkit-text-stroke: 1px #9356DC;
+  transition: color 0.5s ease-in;
+}
+.heart-btn :hover {
+  color: #9356DC;
+}
+.heart-btn :active {
+  color: #4d4d4d;
+}
+.heart-btn :visited {}
+.item-price {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 80px;
+  background: #99E2D0;
+  transition: width 1s;
+  border-radius: 0em 1.5em 1.5em 0em;
+}
+.item-price:hover {
+  width: 200px;
+}
+.dish {
+  margin-left: 12px;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  padding-left: 16px;
+  font-size: 21px;
+  font-weight: bold;
+}
+.underlinesmall {
+  width: 50px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 28px;
+}
+hr {
+  background-color: #99E2D0;
+  border: solid 2px #99E2D0;
+}
+.heart-btn {
+  float: right;
+}
+.item__desc {
+  font-weight: bold;
+  padding-bottom: 0.75em;
+}
+.description {
+  font-size: 14px;
+}
+/* style the main menu item container */
+
+.menu-item-container {
+  margin: .8rem .9rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px -8px rgba(0, 0, 0, .5);
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  /* other */
+}
+/* padding inside menu item container */
+
+.menu-item-container .ingredients, .menu-item-container .icon-container {
+  padding: .8rem;
+}
+/* format content inside menu item container */
+
+.menu-item-container .ingredients {
+  min-width: 0;
+  width: 100%;
+}
+/* styling for price add marging and style font */
+
+.menu-item-container .ingredients .body .price {}
+.menu-item-container .ingredients .body {
+  display: flex;
+}
+.menu-item-container .ingredients .body .description {
+  flex-grow: 1;
+}
+/* style the tick icon container */
+
+.menu-item-container .icon-container {
+  align-items: center;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+}
+/* style the tick icon */
+
+.tick-icon {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* hide icon with animation by default  */
+
+.menu-item-container .icon-container {
+  padding: .7rem 0;
+  width: 0;
+}
+/* show or unhide icon on container hover */
+
+.menu-item-container:hover .icon-container {
+  padding: 0 1.8rem;
+  width: .51rem;
+}
+/* animate transition */
+
+.menu-item-container .icon-container {
+  -webkit-transition: all 0.55s;
+}
+/* makes the icon spin or rotate */
+
+.menu-item-container:hover .slow-spin {
+  transition: .5s;
+  transform: rotate(360deg);
+}
+.ingredients {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 20px;
+  width: 100%;
+  border-radius: 50px;
+}
+.item_order {
+  background-color: #f2f2f2;
+  padding: 20px 96px;
+}
+.centeredButton_02 {
+  display: block;
+  margin: auto;
+  padding: 15px 70px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  background-color: #9356DC;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px #cccccc;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 4px 8px 12px 0 #A6A6A6;
+}
+.centeredButton_02:hover {
+  background-color: #FF79DA;
+}
+.centeredButton_02:active {
+  background-color: #99E2D0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+footer {
+  background: #4d4d4d;
+}
+footer p {
+  font-family: 'Shrikhand', cursive;
+  display: block;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  background: #333333;
+  color: white;
+}
+footer div {
+  display: block;
+  text-align: left;
+  padding: 5px 20px;
+  background: #333333;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a i {
+  padding-right: 10px;
+}
+
+
+  @media only screen and (min-width: 750px) {
+    /* For tablets: */
+    .col-a-1 {
+      width: 8.33%;
+    }
+    .col-a-2 {
+      width: 16.66%;
+    }
+    .col-a-3 {
+      width: 25%;
+    }
+    .col-a-4 {
+      width: 33.33%;
+    }
+    .col-a-5 {
+      width: 41.66%;
+    }
+    .col-a-6 {
+      width: 50%;
+    }
+    .col-a-7 {
+      width: 58.33%;
+    }
+    .col-a-8 {
+      width: 66.66%;
+    }
+    .col-a-9 {
+      width: 75%;
+    }
+    .col-a-10 {
+      width: 83.33%;
+    }
+    .col-a-11 {
+      width: 91.66%;
+    }
+    .col-a-12 {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 1100px) {
+    /* For desktop: */
+    .col-1 {
+      width: 8.33%;
+    }
+    .col-2 {
+      width: 16.66%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.33%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+      width: 66.66%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-10 {
+      width: 83.33%;
+    }
+    .col-11 {
+      width: 91.66%;
+    }
+    .col-12 {
+      width: 100%;
+    }
+  }
